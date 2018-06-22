@@ -34,4 +34,4 @@ testCafe
 ```
 
 ## Author
-Matias Berrutti (http://berrutti.me)
+Matias Berrutti (https://github.com/berrutti)
