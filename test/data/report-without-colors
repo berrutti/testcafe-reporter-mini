@@ -1,1 +1,36 @@
-TODO
+Running tests in:
+ - Chrome 41.0.2227 / Mac OS X 10.10.1
+ - Firefox 47 / Mac OS X 10.10.1
+
+ First fixture
+ V First test in first fixture (unstable) (screenshots:
+ /screenshots/1445437598847)
+ X Second test in first fixture (screenshots: /screenshots/1445437598847)
+   Some error
+ V Third test in first fixture
+
+ Second fixture
+ V First test in second fixture
+ V Second test in second fixture
+ V Third test in second fixture
+
+ Third fixture
+ X First test in third fixture (unstable)
+
+
+ 2/6 failed (15m 25s)
+
+ Warnings (3):
+ --
+  Was unable to take a screenshot due to an error.
+
+  ReferenceError: someVar is not defined
+ --
+  Was unable to take a screenshot due to an error.
+
+  ReferenceError: someOtherVar is not defined
+ --
+  Was unable to take screenshots because the screenshot directory is not
+  specified. To specify it, use the "-s" or "--screenshots" command line
+  option or the "screenshots" method of the test runner in case you are using
+  API.
