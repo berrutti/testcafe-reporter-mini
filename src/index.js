@@ -1,6 +1,6 @@
 export default function () {
     return {
-        noColors:       false,
+        noColors:       true,
         startTime:      null,
         afterErrorList: false,
         testCount:      0,
@@ -40,8 +40,9 @@ export default function () {
                 .newline();
 
             errs.forEach((err) => {
-                if (err['errMsg'])
-                    this.write(err['errMsg']);
+                this.useWordWrap(false);
+                err = this.formatError(err);
+                this.write(err.match(/.*/m)[0]);
             });
         },
 
