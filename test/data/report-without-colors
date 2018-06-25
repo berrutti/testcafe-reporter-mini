@@ -6,7 +6,7 @@ Running tests in:
  V First test in first fixture (unstable) (screenshots:
  /screenshots/1445437598847)
  X Second test in first fixture (screenshots: /screenshots/1445437598847)
-   Some error
+   Error on page "http://example.org":   The specified selector does not match any element in the DOM tree.
  V Third test in first fixture
 
  Second fixture
@@ -16,7 +16,7 @@ Running tests in:
 
  Third fixture
  X First test in third fixture (unstable)
-
+   - Error in beforeEach hook -
 
  2/6 failed (15m 25s)
 
