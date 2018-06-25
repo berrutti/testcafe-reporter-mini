@@ -37,12 +37,15 @@ export default function () {
 
         _renderErrors (errs) {
             this.setIndent(3)
-                .newline();
+                .useWordWrap(false);
 
             errs.forEach((err) => {
-                this.useWordWrap(false);
+                this.newline();
                 err = this.formatError(err);
-                this.write(err.match(/.*/m)[0]);
+                const errorMsg = err.split('Browser')[0];
+
+                this.write(errorMsg.replace(/\s\s+/g, ' '));
+
             });
         },
 

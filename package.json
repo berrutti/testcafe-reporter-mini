@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-mini",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "mini TestCafe reporter plugin.",
   "repository": "https://github.com/berrutti/testcafe-reporter-mini",
   "author": {
